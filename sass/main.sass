@@ -32,15 +32,17 @@ html
 
       .logo
         text-align: center
-        margin: 0 0 25px
+        margin: 10px 0 25px
 
       .acardeon
         $bordr: 20px
+        $padleftright: 20px
 
         padding: 0
         list-style: none
         font-family: MS Sans Serif, Geneva, sans-serif
         font-weight: 700
+        color: #4f4f4f
 
         > li
           background: #e7e7e7
@@ -52,38 +54,53 @@ html
               background: #696666
               color: #fff
 
+          &.active
+            .trigger
+              background: #ff8663
+              color: #fff
+
+              span::after
+                border-bottom-color: #fff
+
           .trigger
             display: block
             color: #4f4f4f
             text-decoration: none
             font-size: 15px
-            padding: 14px 20px
+            padding: 14px $padleftright
             border-radius: $bordr
             position: relative
 
             span
               position: absolute
               right: 20px
-              top: 50%
+              top: 0
               width: 14px
-              transform: translateY(-50%)
+              height: 100%
 
               &:after
                 border: solid transparent
                 content: ""
                 height: 0
                 width: 0
-                top: 0
-                left: 50%
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
                 position: absolute
                 pointer-events: none
-                border-color: rgba(255, 134, 99, 0);
+                border-color: rgba(255, 134, 99, 0)
                 border-top-color: #ff8663
                 border-width: 7px
                 margin-left: -7px
 
           .text
             display: none
+            padding: 16px $padleftright 20px
+            line-height: 1.5
+
+            ul
+              padding: 0
+              list-style: none
 
   footer
     width: 100%
