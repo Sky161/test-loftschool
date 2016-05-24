@@ -1,0 +1,26 @@
+{
+  "name": "Test-Loftschool",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "browser-sync": "^2.10.1",
+    "coffeeify": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-less": "^3.0.3"
+  },
+  "scripts": {
+    "postinstall": "bower install && gulp"
+  },
+  "author": "Andrey Chechkin",
+  "license": "ISC"
+}

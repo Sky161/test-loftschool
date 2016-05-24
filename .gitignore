@@ -1,0 +1,7 @@
+app/*.html
+app/components/
+app/build.css
+app/build.js
+
+npm-debug.log
+node_modules
