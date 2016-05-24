@@ -9,5 +9,8 @@
   "homepage": "https://github.com/Sky161/test-loftschool",
   "moduleType": [
     "globals"
-  ]
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.1.1"
+  }
 }
